@@ -15,7 +15,7 @@ var personSchema = mongoose.Schema({
 	dislikes: [String],
 	gender: String,
 	color: String,
-	birthday: String
+	birthday: Date
 });
 
 personSchema.statics.add = function(userObj, cb) {
