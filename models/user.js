@@ -19,8 +19,7 @@ var personSchema = mongoose.Schema({
 });
 
 personSchema.statics.add = function(userObj, cb) {
-	var person = new Person();
-	person = userObj;
+	var person = new Person(userObj);
 	person.save(cb);
 }
 
